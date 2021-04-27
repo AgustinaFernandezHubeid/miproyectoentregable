@@ -1,0 +1,34 @@
+
+
+.type-light {
+	font-family: $font;
+	font-weight:$font-light;
+	
+}
+.type-regular{
+	font-family: $font;
+	font-weight:$font-regular;
+}
+
+.type-medium {
+	font-family:$font;
+	font-weight:$font-medium;
+}
+
+.type_semi-bold {
+	font-family: $font;
+	font-weight:$font-semi-bold;
+}
+
+.type-bold {
+	font-family:$font;
+	font-weight:$font-bold;
+}
+
+@each $key, $val in $font-styles{
+	.type-#{$key} {
+		font-family:$font;
+		font-weight:$val;
+
+		}
+	}

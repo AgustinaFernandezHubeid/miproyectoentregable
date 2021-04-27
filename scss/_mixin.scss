@@ -1,0 +1,13 @@
+@mixin botones {
+	color:$color-white;
+		background-color:$color-black;
+		height:15%;width:50%px;
+		border-radius: 6px;
+		text-align: center;
+		padding: 15px;
+		font-family: $font;
+		font-size: $font-line2;
+		font-weight:$font-bold;
+		text-decoration: none;
+	}
+	
