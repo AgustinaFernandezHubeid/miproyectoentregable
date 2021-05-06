@@ -1,8 +1,9 @@
 *{
 	margin: 0px;
 	padding: 0px;
-}
+	border-box: box-sizing;
 
+}
 .sin-padding {
 	padding:0;
 }
@@ -11,17 +12,26 @@ body {
 	background-image:url(../imagenes/fondodiseño.png);
 }
 
+.container-fluid { 
+ padding-left: 0px;
+ padding-right: 0px;
+ }
+
+ .row {
+ 	margin-left: 0px;
+ 	margin-right:0px;
+ }
 #header{
 	display:flex;
     flex-direction: row;
     background-color:$color-white;
 	height:90px;
-	width: 100%;
+	width:100%;
 	align-items: center;
 	position: fixed;
-	top:0;
+	margin:0;
 	justify-content:flex-end; 
-	z-index: 10;
+	z-index:10;
 
 
 	.header__logo {
@@ -45,9 +55,9 @@ body {
 			animation-duration: 5s;
 			animation-name: aparecer;
 		}
-		 a :hover {
-			background-color:#F5C6AA;
-			color:white; 
+		 a:hover {
+			background-color:$color-black;
+			color:$color-white; 
 			font-weight:bold;
 	}
 }
@@ -100,7 +110,7 @@ body {
 		color:$color-black;
 		font-family:$font; 
 		font-weight:$font-light;
-		font-size:$font-line2;
+		font-size:$font-line1;
 		text-align: justify;
 	}
 	button {
@@ -111,7 +121,6 @@ body {
 		margin: 10px 0 10px 0;
 
 		a { 
-
 			color:$color-white;
 			font-family:$font;
 			font-size: $font-line2;
@@ -119,7 +128,6 @@ body {
 			text-decoration: none;
 			padding:20px;
 		 }
-
 	}
 
 }
@@ -148,9 +156,11 @@ body {
 }
 
 /* Inicio estilo sección SobreMi */
+ .seccionsobremi {
+ 		background-image:url(../imagenes/fondodiseño.png);
+ 		}
 
 .seccion1 {
-	background-color:$color1;
 	width: 100%;
 	margin-top:100px;
 
@@ -173,19 +183,11 @@ body {
 
 		}
 
-		h4{ 
-
-		color:$color-black;
-		font-family:$font; 
-		font-weight:$font-medium;	
-		font-size:$font-subtitle;
-		}
-
 		h4 { 
 		color:$color-black;
 		font-family:$font; 
 		font-weight:$font-light;
-		font-size:$font-line2;
+		font-size:$font-subtitle;
 		text-align: justify;
 		 }
 	}
@@ -204,14 +206,13 @@ body {
 	display: flex;
 	flex-direction:column;
 	flex-wrap: wrap;
-	height:fit-content; width:fit-content;
 	margin-top:30px;
 	padding:10px;
 
 		img{ 
 
 		width: 80%;
-  		margin: 40px;	
+  		margin:20px;	
 		 }
 	}
 
@@ -219,31 +220,33 @@ body {
 	display: flex;
 	flex-direction:column;
 	flex-wrap: wrap;
-	background-color:$color2;
 	height: fit-content; width:60%;
-	margin:auto; margin-top:100px;
+	margin:10px;margin-top:40px; margin-bottom:50px;
 	padding:20px;
 
-	h3{
-		color:$color-white;
+	h2{
+		color:$color3;
 		font-family:$font; 
 		font-weight:$font-bold;	
-		font-size:$font-subtitle;
-		align-content: center;
+		font-size:$font-title;
+		text-align:center;
+		padding:10px;
+		margin:10px;
 	}
   
 	p {
 		color:$color-black;
 		font-family:$font; 
-		font-weight:$font-light;
+		font-weight:$font-medium;
 		font-size:$font-line2;
 		text-align: justify;
+		margin:10px;
+
 	}
 
  }
 
 }
-
 /* Inicio estilo sección Servicios */
 
 #servicios {
@@ -308,6 +311,7 @@ body {
 		font-weight:$font-bold;
 		padding: 10px;
 		margin-top:20px;
+		color:$color-black;
 
 	}
 
@@ -315,10 +319,17 @@ body {
 		font-family:$font;
 		font-size: $font-line2;
 		font-weight:$font-light;
+		color:$color-black;
+		margin:10px;
+		text-align:justify;
 	}
 
 	.btn {
 		@include botones;
+	
+		a {
+			color:$color-white;
+		}
 	}
  
 }
@@ -345,6 +356,7 @@ body {
 	             color: white;
 	             background-color:$color2;
 	             font-weight:$font-bold;
+	             margin:10px;
 				}				
 			}
 	}
@@ -370,25 +382,38 @@ body {
 
   	}
  }
-.Box {
-	height: 80%; width: 80%;
- 	margin:20px;
 
- 			.img {
-					width: 60%;
-					margin: 20px 40px;
-				}
+.card {
+	background-image:url(../imagenes/fondodiseño.png);
+	display:flex;
+	margin:20px;
 
-			 .text {
-				text-align: center;
-				font-family:$font;
-				font-size:$font-line1;
-				font-weight:$font-semi-bold;
-				color:$color2;
-				}				
+ img {
+ 	width:80%;
+ 	margin:30px;
+ 	align-items:center;
+ }
+
+.card-body {
+		width:fit-content; height: fit-content; 
+	.card-title{
+		text-align: center;
+ 		font-family:$font;
+ 		font-weight: $font-bold;
+ 		font-size: $font-subtitle;
+ 		color:$color-black;
+ 		padding:5px;
+	}
+.card-text {
+		font-family:$font;
+		font-size: $font-line2;
+		font-weight:$font-light;
+		color:$color-black;
+		margin:10px;
+		text-align:justify;
 }
-
-
+}
+}
 }
 
 
