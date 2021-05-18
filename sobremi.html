@@ -13,22 +13,39 @@
 </head>
 <body>
 <div class="container-fluid sin-padding">
-	<div class="row">
-		<div class="col-md-12"> 
-			<header id="header">		
-				<div><a href="index.html" ><img src="imagenes/ac.jpg" alt="Logo" class="header__logo"></a></div>
-				<div class="header__navbar">
-					<ul class="header__navbar--ul" class="type-light">
-						<li><a href="index.html">Inicio</a></li> 
-						<li><a href="sobremi.html">Sobre mí </a></li>
-						<li> <a href="servicios.html">Servicios</a></li>
-						<li><a href="recetas.html">Recetas</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
-				</div>
-			</header>
-		</div>
-	</div>
+<div class= "sin-padding">
+<nav class="navbar navbar-expand-lg " style="background-color: #FFFFFF; ">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/logo.png" width="100px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
 	<div class="container-fluid sin-padding seccionsobremi">
 	<div class="row">
 			<section class="seccion1" class=col-lg-12>
@@ -41,10 +58,10 @@
 	</div>
 	<div class="row">	
 	<section class="seccion2" class=col-lg-12>
-		<div class="seccion2__contenedor1" class="col-lg-6">
+		<div class="seccion2__contenedor1" class=" col-lg-6">
 			<img class="seccion2__contenedor1--img"src="imagenes/acfoto.png" alt="Agustina">	
 		</div>
-		<div class="seccion2__contenedor2" class="col-lg-6">
+		<div class="seccion2__contenedor2" class=" col-lg-6">
 			<h2 class="seccion2__contenedor--titulo">¡HOLA! SOY AGUSTINA </h2>		
 			<p class="seccion2__contenedor--parrafo">Soy Licenciada en Nutrición por la Universidad Nacional de Córdoba y desde mi lugar, creo que todos los profesionales trabajamos la nutrición de una manera diferente. Por eso, quiero contarte cuáles son los objetivos claves, para mi, en una consulta y a lo largo del tratamiento:</p>
 			<p>-Que aprendas a alimentarte de manera más CONSCIENTE y cuidar tu salud. No me alcanza con lograr un paciente estéticamente flaco pero que viva cansado y de mal humor, que se enferme con el primer cambio de clima, o se lesione en una clase de zumba. PRIMERO SALUD, DESPUÉS ESTÉTICA.</p>
@@ -58,17 +75,19 @@
 	</section>
 	</div>
 	</div>
-	<div class="container-fluid sin-padding">
-	<div class="row">
-			<footer id= "footer" class="col-lg-12">
-				<ul class="footer__li">
-		   			<li><img src="imagenes/direccion.svg" alt="contacto"> Bv. Chacabuco, Primer piso, Oficina 2, Córdoba, Argentina</li>
-		   			<li><img src="imagenes/whatsapp.svg" alt="contacto">  +549 351 089 765</li>
-		    		<li> <img src="imagenes/correo.svg"alt="contacto">  consultas@acnutricion.com</li>
-				</ul>
-			</footer>
- 		</div>	
- </div>
+	<<footer id="footer" >
+                    <ul class=" footer__li">
+                        <li><img src="imagenes/direccion.svg" alt="contacto"> Bv. Chacabuco, Primer piso, Oficina 2,
+                            Córdoba, Argentina</li>
+                        <li><img src="imagenes/whatsapp.svg" alt="contacto"> +549 351 089 765</li>
+                        <li> <img src="imagenes/correo.svg" alt="contacto"> consultas@acnutricion.com</li>
+                    </ul>
+                    <div class=" redes_sociales">
+                        <a href="https://www.facebook.com/agustina.caby/"><img src="imagenes/facebook.svg"></a>
+                        <a href="https://instagram.com/ac.nutricionn?igshid=89upqlnqm01u"><img
+                                src="imagenes/instagram.svg"></a>
+                    </div>
+            </footer>	
 <script src="js/jquery-3.5.1.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script> 	
 </body>

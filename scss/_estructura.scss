@@ -1,15 +1,14 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	border-box: box-sizing;
-
-}
-.sin-padding {
-	padding:0;
 }
 
 body {
 	background-image:url(../imagenes/fondodiseño.png);
+}
+
+.sin-padding {
+padding:0;
 }
 
 .container-fluid { 
@@ -18,61 +17,33 @@ body {
  }
 
  .row {
- 	margin-left: 0px;
+ 	margin-left:0px;
  	margin-right:0px;
  }
-#header{
-	display:flex;
-    flex-direction: row;
-    background-color:$color-white;
-	height:90px;
-	width:100%;
-	align-items: center;
-	position: fixed;
-	margin:0;
-	justify-content:flex-end; 
-	z-index:10;
 
-
-	.header__logo {
-	margin-left:30px;
-	display: block;
-	width:30%;	
-	}
-
-   .header__navbar--ul{
-	list-style: none;
-
-   		 li {
-		display:inline-block;
-		margin-right:120px;
-
-		 a {
-			display: inline-block;
-			color:$color-black;
-			text-decoration: none;
-			font-size: $font-line1;
-			animation-duration: 5s;
-			animation-name: aparecer;
-		}
-		 a:hover {
-			background-color:$color-black;
-			color:$color-white; 
-			font-weight:bold;
-	}
+.nav-link {
+    padding: 5px;
+    margin-right: 50px;
 }
-
- @keyframes aparecer {
-  		 0% {
-   	 	 opacity: 0;
-   			}
-  		 100% {
-    	 opacity: 1;
-   	  	}
- }
-
- }
+.nav-item a {
+    color: $color-black;
+    text-decoration: none;
+    font-size: $font-line1;
+    animation-duration: 5s;
+    animation-name: aparecer;
 }
+.nav-item a:hover {
+    background-color: $color-black;
+    color: $color-white;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} 
 
 .fondo {
 	background-image: url(../imagenes/fondo2.jpg);
@@ -80,11 +51,10 @@ body {
 	background-size:cover;
 	background-position: center;
 	height:fit-content;
-	margin-top:50px;
+	margin-top:0px;
 	padding-top: 80px;
 	padding-bottom: 50px;
 }
-
 .contenedorI {
 	display: flex;
 	flex-direction:column;
@@ -131,28 +101,59 @@ body {
 	}
 
 }
+@media all and (min-width: 400px) and (max-width:768px) {
+.fondo {
+	background-image: url(../imagenes/fondodiseño.png);
+	;
+}
+.contenedorI {
+	align-items:center;
+	margin-right:40px;margin-top:20px;
+	width:100%;
+
+
+h2 { 
+	text-align:center;
+	font-size:$font-title;
+
+	}
+	h1 {
+	font-size:$font-line2;
+	text-align:center;
+	}
+	p {
+		font-size:$font-line2;
+	}
+
+}
+}
 
 #footer {
-	display: flex;
-	flex-direction:column;
-	flex-wrap: nowrap;
-	align-items:center;
-	justify-content:center;
-	height:150px;
-	background-color:$color2;
-	padding: 0 20px;
-
-	li {
-		display:block;
-		text-align: center;
-		margin:0;
-		padding: 7px;
-		font-family: $font; font-weight: $font-medium; font-size:$font-line2;
-		color:color-black;
-	}
-.redes_sociales {
-	display:block;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: $color2;
+    padding-top: 15px;
+    li {
+        list-style: none;
+        text-align: center;
+        padding: 7px;
+        font-family: $font;
+        font-weight: $font-medium;
+        font-size: $font-line2;
+        color: color-black;
+    }
+    .redes_sociales {
+        img {
+        	align-items:center;
+            width: 30px;
+            margin: 15px;
+            a:hover {
+               transform:scale(1.2);
+            }
+        }
+    }
 }
 
 /* Inicio estilo sección SobreMi */
@@ -246,7 +247,33 @@ body {
 
  }
 
+@media all and (min-width:400px) and (max-width:768px) {
+	.seccionsobremi {
+ 		
+			.seccion1 {
+			margin-top:50px;
+				.seccion1__contenedor{
+				text-align:center;
+				h3 {
+					font-size:$font-line2;
+					}
+			}
+				}
+
 }
+.seccion2__contenedor1 {   
+img {
+		width:80%;
+		margin-left:40px;
+	}
+}	
+.seccion2__contenedor2 {
+	width:100%;
+	
+}
+}
+}
+
 /* Inicio estilo sección Servicios */
 
 #servicios {
@@ -350,16 +377,42 @@ body {
 			background-color:$color2;
 			height:30%;
 
-
               .btn-link {
 	             text-decoration: none;
 	             color: white;
 	             background-color:$color2;
 	             font-weight:$font-bold;
 	             margin:10px;
-				}				
-			}
+	             	}	
+
 	}
+}
+@media all and (min-width: 400px) and (max-width:768px) {
+	.seccionA { 
+	display: flex;
+	flex-direction: column;
+
+	.seccionA__Box1{
+		width:80%;
+		margin:30px;margin-top:10px;
+		h2 {
+	 	font-size:$font-line1;
+	 }
+      }
+     .seccionA__Box2{
+		width:80%;
+		margin:30px;margin-top:10px;
+		h2 {
+	 	font-size:$font-line1;
+	 }
+      }
+      .btn {
+      	align-items:center;
+      	margin-left: 10px;
+
+      }
+}
+}
 
 /* Inicio estilo sección Recetas */
 
@@ -369,7 +422,7 @@ body {
 .Box__title {
 	background-color:$color2;
 	width: 100%;
-	margin-top:150px;
+	margin-top:50px;
 	margin-bottom:50px;
 
 		h2 { 
@@ -386,11 +439,11 @@ body {
 .card {
 	background-image:url(../imagenes/fondodiseño.png);
 	display:flex;
-	margin:20px;
-
+	margin:10px;
+	border-color:$color2;
  img {
  	width:80%;
- 	margin:30px;
+ 	margin:20px; margin-left:30px;
  	align-items:center;
  }
 
@@ -422,19 +475,19 @@ body {
 #contacto{
 	height:100%; width:100%;
 
-
 .title {
     	font-family:$font;
     	font-size:$font-title;
     	font-weight:$font-bold;
     	color:$color-black;
     	justify-content:center;
-    	margin-top:100px; margin-left:50px;
+    	margin-top:100px; margin-left:100px;
     	}
 
 .form {
 	margin-top: 100px;
 	margin-right:100px;
+	border-color:$color-black;
 
 	.form-boxes{
 		box-sizing:border-box;
@@ -452,11 +505,24 @@ body {
 		font-weight:$font-bold;
 		text-decoration: none;    
 	}
-
 }
 
+@media all and (min-width: 400px) and (max-width:768px) {
+ .title{
+ 	text-align:center;
+ 	font-size:$font-title;
+ 	margin:10px;
+ }
+ .form {
+ 	align-items:center;
+ 	margin:20px;
+
+ }
+
+}
 }
 
+ 
 
 
 

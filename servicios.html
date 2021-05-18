@@ -11,24 +11,42 @@
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">	
 </head>
 <body>
-<div class="container-fluid sin-padding" >
-	<div class="row">
-		<div class="col-md-12"> 
-			<header id="header">		
-				<div><a href="index.html" ><img src="imagenes/ac.jpg" alt="Logo" class="header__logo"></a></div>
-				<div class="header__navbar">
-					<ul class="header__navbar--ul" class="type-light">
-						<li><a href="index.html">Inicio</a></li> 
-						<li><a href="sobremi.html">Sobre mí </a></li>
-						<li> <a href="servicios.html">Servicios</a></li>
-						<li><a href="recetas.html">Recetas</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
-				</div>
-			</header>
-		</div>
-	</div>
-	<div  id= "servicios" class="row" >
+<div class="container-fluid sin-padding">
+<div class= "sin-padding">
+<nav class="navbar navbar-expand-lg " style="background-color: #FFFFFF; ">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/logo.png" width="100px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
+    <div class="container-fluid sin-padding">
+	<div id= "servicios" class="row sin-padding" >
 	<section class="seccionA" class="col-lg-12">  
 			<div class="seccionA__Box1" class="col-lg-6">
 				<div class="seccionA__titulo">
@@ -36,8 +54,7 @@
 				</div>
 				<div class="seccionA__texto">
 					<p >La distancia ya no es excusa para cambiar tus hábitos. Te propongo acompañarte en este proceso virtualmente. Estaremos en contacto permanente y casi no notarás la diferencia.Llevarás sus mediciones, siguiendo mis indicaciones, lo cual nos permitirá registrar todo tu progeso de manera conjunta. Te invito a conocer mi consultorio online. ¡Animate! </p>
-					<button class="btn">Solicitar turno</button>
-					<!-- Aquí debería ir un enlace a whatsapp -->
+					<button class="btn"><a href="https://api.whatsapp.com/send?phone=1+5493885048028">Solicitar turno</a></button>
 				</div>
 			</div>
 			<div class="seccionA__Box2" class="col-lg-6">
@@ -45,13 +62,14 @@
 					<h2>Consulta Presencial</h2>
 				</div>
 				<div class="seccionA__texto">
-					<p> A pesar de las circunstancias actuales, seguiremos trabajando por tu salud y bienestar. Siguiendo los protocolos sanitarios vigentes, te propongo llevar a cabo este proceso con mi acompañamiento presencial. ¿Cuántas veces nos reuniremos? Aquellas que consideremos necesarias para garantizar los resultados de tu proceso ¡Espero verte por el consultorio muy pronto! </p>
-						<button class="btn">Solicitar turno</button>
+					<p> A pesar de las circunstancias actuales, seguiremos trabajando por tu salud y bienestar. Siguiendo los protocolos sanitarios vigentes, te propongo llevar a cabo este proceso con mi acompañamiento presencial. ¿Cuántas veces nos reuniremos? Aquellas que consideremos necesarias para garantizar los resultados de tu proceso ¡Espero verte por el consultorio! </p>
+						<button class="btn"><a href="https://api.whatsapp.com/send?phone=1+5493885048028">Solicitar turno</a></button>
 				</div>
 			</div>
 		</section>
 	</div> 
-	<div class="row">
+	</div>
+	<div class="row sin-padding">
 		<section class="seccionB" class="col-lg-12"> 
 			<div class="accordion" id="accordionExample">		
 				<div class="card">
@@ -60,19 +78,13 @@
 							<button class="btn btn-link btn-block text-left collapsed" type="button"
 								data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
 								aria-controls="collapseOne">
-								¿En cuánto tiempo veré resultados?
+								¿Cómo sé que el tratamiento es adecuado para mí?
 							</button>
 						</h3>
 					</div>
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-							squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-							nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-							single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-							beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-							lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-							probably haven't heard of them accusamus labore sustainable VHS.
+							Somos el resultado de nuestros hábitos y en más de una ocasión nos encontramos condicionados por diversos factores genéticos. Por ello, no existe un solo cámino válido para alcanzar el peso ideal. Mi intención es conocerte y guiarte a lo largo de este proceso, para que de forma personalizada y saludable, alcances tus objetivos. Es por ello, que antes de empezar el tratamiento, evaluaremos tu estado actual de salud y tu historial clínico. Conversaremos sobre tus hábitos laborales y de ocio, tus gustos y expectativas. ¡No te pongas límites!
 						</div>
 					</div>
 				</div>
@@ -86,36 +98,21 @@
 					</div>
 					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-							squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-							nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-							single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-							beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-							lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-							probably haven't heard of them accusamus labore sustainable VHS.
+							Cada persona es única por lo que si bien a partir de la primera consulta podremos fijar un tiempo estimado, no te apures! El proceso que llevarás a cabo supone cambiar tus hábitos alimenticios para siempre. De este modo, no podemos esperar que suceda de un día para otro. Debemos ser pacientes y perseverantes, pero no te preocupes ¡yo estoy para ayudarte!
 						</div>
 					</div>
 				</div>
 				<div class="card">
 					<div class="header__color">
 						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left collapsed" type="button"
-								data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-								aria-controls="collapseThree">
-								¿Qué métodos de pago aceptas?
+							<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"aria-controls="collapseThree"> ¿Qué métodos de pago aceptas?
 							</button>
 						</h2>
 					</div>
 					<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
 						data-parent="#accordionExample">
 						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-							squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-							nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-							single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-							beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-							lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-							probably haven't heard of them accusamus labore sustainable VHS.
+							Podes abonar cada consulta en efectivo o a través de Mercado Pago, solo debes solicitarme el link una vez acordado el encuentro. Además, para tratamientos prolongados, tengo importantes descuentos para que puedas alcanzar tus objetivos. 
 						</div>
 					</div>
 				</div>
@@ -123,16 +120,19 @@
 		</section>
 		</section>
 </div>
-<<div class="row">
-			<footer id= "footer" class="col-lg-12">
-				<ul class="footer__li">
-		   			<li><img src="imagenes/direccion.svg" alt="contacto"> Bv. Chacabuco, Primer piso, Oficina 2, Córdoba, Argentina</li>
-		   			<li><img src="imagenes/whatsapp.svg" alt="contacto">  +549 351 089 765</li>
-		    		<li> <img src="imagenes/correo.svg"alt="contacto">  consultas@acnutricion.com</li>
-				</ul>
-			</footer>
- 		</div>	
- </div>
+<footer id="footer" >
+                    <ul class=" footer__li">
+                        <li><img src="imagenes/direccion.svg" alt="contacto"> Bv. Chacabuco, Primer piso, Oficina 2,
+                            Córdoba, Argentina</li>
+                        <li><img src="imagenes/whatsapp.svg" alt="contacto"> +549 351 089 765</li>
+                        <li> <img src="imagenes/correo.svg" alt="contacto"> consultas@acnutricion.com</li>
+                    </ul>
+                    <div class=" redes_sociales">
+                        <a href="https://www.facebook.com/agustina.caby/"><img src="imagenes/facebook.svg"></a>
+                        <a href="https://instagram.com/ac.nutricionn?igshid=89upqlnqm01u"><img
+                                src="imagenes/instagram.svg"></a>
+                    </div>
+           </footer>	
 <script src="js/jquery-3.5.1.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script> 	
 </body>

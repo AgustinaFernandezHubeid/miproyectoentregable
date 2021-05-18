@@ -8,33 +8,50 @@
 	<meta name=viewport content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">	
 </head>
 <body>
-<div class="container-fluid sin-padding" >
-	<div class="row">
-		<div class="col-md-12"> 
-			<header id="header">		
-				<div><a href="index.html" ><img src="imagenes/ac.jpg" alt="Logo" class="header__logo"></a></div>
-				<div class="header__navbar">
-					<ul class="header__navbar--ul" class="type-light">
-						<li><a href="index.html">Inicio</a></li> 
-						<li><a href="sobremi.html">Sobre mí </a></li>
-						<li> <a href="servicios.html">Servicios</a></li>
-						<li><a href="recetas.html">Recetas</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
-				</div>
-			</header>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<section class= "fondo" class="col-lg-12">
+<div class="container-fluid sin-padding">
+<div class= "sin-padding">
+<nav class="navbar navbar-expand-lg " style="background-color: #FFFFFF; ">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/logo.png" width="100px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </div>
+	<div class="container-fluid sin-padding">
+		<div class="row sin-padding">
+			<section class= "fondo" class=" col-sm-12 col-lg-12">
 				<div class="row">
 					<div class="col-lg-6"></div>
-					<div class="col-lg-6">
+					<div class="col-sm-12 col-lg-6">
 					<div class="contenedorI">
 						<h2 class="contenedorI_h1">AC.nutrición</h2>
 						<h1 class="contenedorI_h3 ">Alimentación real, flexible y consciente.</h1>
@@ -44,17 +61,25 @@
 				</div>	
 			</section>
 		</div>
-		<div class="row">
-			<footer id= "footer" class="col-lg-12">
-				<ul class="footer__li">
-		   			<li><img src="imagenes/direccion.svg" alt="contacto"> Bv. Chacabuco, Primer piso, Oficina 2, Córdoba, Argentina</li>
-		   			<li><img src="imagenes/whatsapp.svg" alt="contacto">  +549 351 089 765</li>
-		    		<li> <img src="imagenes/correo.svg"alt="contacto">  consultas@acnutricion.com</li>
-				</ul>
-			</footer>
- 		</div>	
- </div>
+		<footer id="footer" >
+                    <ul class=" footer__li">
+                        <li><img src="imagenes/direccion.svg" alt="contacto"> Bv. Chacabuco, Primer piso, Oficina 2,
+                            Córdoba, Argentina</li>
+                        <li><img src="imagenes/whatsapp.svg" alt="contacto"> +549 351 089 765</li>
+                        <li> <img src="imagenes/correo.svg" alt="contacto"> consultas@acnutricion.com</li>
+                    </ul>
+                    <div class=" redes_sociales">
+                        <a href="https://www.facebook.com/agustina.caby/"><img src="imagenes/facebook.svg"></a>
+                        <a href="https://instagram.com/ac.nutricionn?igshid=89upqlnqm01u"><img
+                                src="imagenes/instagram.svg"></a>
+                    </div>
+            </footer>	
 <script src="js/jquery-3.5.1.slim.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script> 	
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+
 </body>
 </html>
